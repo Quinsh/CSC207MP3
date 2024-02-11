@@ -21,6 +21,8 @@ public class TBUtils {
    */
   static String lotsOfSpaces = "  ";
 
+  static String lotsOfStars = "*";
+
   // +----------------+----------------------------------------------------
   // | Static Methods |
   // +----------------+
@@ -37,6 +39,17 @@ public class TBUtils {
     } // while
     // Extract an appropriate length substring
     return lotsOfDashes.substring(0, len);
+  } // dashes(int)
+  
+  static String stars(int len) {
+    // Note: This strategy probably represents an overkill in
+    // attempts at efficiency.
+    // Make sure the collection of dashes is big enough
+    while (lotsOfStars.length() < len) {
+      lotsOfStars = lotsOfStars.concat(lotsOfStars);
+    } // while
+    // Extract an appropriate length substring
+    return lotsOfStars.substring(0, len);
   } // dashes(int)
 
   /**

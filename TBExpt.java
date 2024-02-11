@@ -21,9 +21,10 @@ public class TBExpt {
 
     TextBlock box = new VComposition(new BoxedBlock(txt1), new BoxedBlock(txt2));
     
-    TextBlock rev = new verticallyFlipped(box);
+    TextBlock rev = new freestyleBlock(box);
     
     // Print out the block
+    TBUtils.print(pen, box);
     TBUtils.print(pen, rev);
 
     // Clean up after ourselves.
