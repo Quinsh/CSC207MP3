@@ -58,4 +58,8 @@ public class freestyleBlock implements TextBlock{
         }  
     };
 
+    public boolean eqv(TextBlock other) {
+        return (other instanceof freestyleBlock);
+    }
+
 }

@@ -20,4 +20,7 @@ public class verticallyFlipped implements TextBlock{
         return this.contents.row(this.contents.height() - i - 1);
     };
 
+    public boolean eqv(TextBlock other) {
+        return (other instanceof verticallyFlipped);
+    }
 }

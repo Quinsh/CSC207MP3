@@ -24,4 +24,8 @@ public class horizontallyFlipped implements TextBlock{
         return reversed.toString();
     };
 
+    public boolean eqv(TextBlock other) {
+        return (other instanceof horizontallyFlipped);
+    }
+
 }

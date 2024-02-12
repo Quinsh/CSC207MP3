@@ -62,4 +62,7 @@ public class MutableLine implements TextBlock {
     return this.line.length();
   } // width()
 
+  public boolean eqv(TextBlock other) {
+    return (other instanceof MutableLine);
+  }
 } // class MutableLine

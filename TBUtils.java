@@ -80,4 +80,34 @@ public class TBUtils {
     return lotsOfSpaces.substring(0, len);
   } // spaces(int)
 
+
+  /**
+   * equal : if they contain the same lines.
+   */ 
+  public static boolean equal(TextBlock t1, TextBlock t2) throws Exception{
+    if (t1.height() != t2.height()) {
+      return false;
+    }
+    
+    for(int i =0; i<(t1.height()-1);i++){
+      if(!t1.row(i).equals(t2.row(i))){
+      return false;
+      }
+    }
+    return true;
+  }
+  /**
+  * eq : two things are eq when they have the same memory location (comparated with ==)
+  */
+  public static boolean eq(TextBlock t1, TextBlock t2) {
+    return t1 == t2;
+  }
+  
+  /**
+   * eqv : if they were built in the same way.
+   */
+  public static boolean eqv(TextBlock t1, TextBlock t2) {
+    return t1.eqv(t2);
+  }
+
 } // class TBUtils

@@ -32,4 +32,8 @@ public class RightJustified implements TextBlock{
         return ret;
     };
 
+    public boolean eqv(TextBlock other) {
+        return (other instanceof RightJustified);
+    }
+
 }

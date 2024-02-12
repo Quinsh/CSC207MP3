@@ -36,4 +36,7 @@ public class Centered implements TextBlock{
         return ret;
     };
 
+    public boolean eqv(TextBlock other) {
+        return (other instanceof Centered);
+    }
 }
