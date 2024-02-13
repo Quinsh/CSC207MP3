@@ -37,6 +37,8 @@ public class Centered implements TextBlock{
     };
 
     public boolean eqv(TextBlock other) {
-        return (other instanceof Centered);
+        return (other instanceof Centered) &&
+                (this.totalWidth == ((Centered) other).totalWidth) &&
+                (this.contents.eqv(((Centered) other).contents));
     }
 }

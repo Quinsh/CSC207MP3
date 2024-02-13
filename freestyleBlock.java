@@ -59,7 +59,8 @@ public class freestyleBlock implements TextBlock{
     };
 
     public boolean eqv(TextBlock other) {
-        return (other instanceof freestyleBlock);
+        return (other instanceof freestyleBlock) &&
+                (this.contents.eqv(((freestyleBlock) other).contents));
     }
 
 }

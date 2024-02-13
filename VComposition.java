@@ -85,7 +85,9 @@ public class VComposition implements TextBlock {
   } // width()
 
   public boolean eqv(TextBlock other) {
-    return (other instanceof VComposition);
+    return (other instanceof VComposition) &&
+            (this.top.eqv(((VComposition) other).top)) && 
+            (this.bottom.eqv(((VComposition) other).bottom));       
   }
 
 } // class VComposition

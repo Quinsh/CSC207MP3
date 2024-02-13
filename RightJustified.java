@@ -33,7 +33,8 @@ public class RightJustified implements TextBlock{
     };
 
     public boolean eqv(TextBlock other) {
-        return (other instanceof RightJustified);
+        return (other instanceof RightJustified) &&
+                (this.totalWidth == ((RightJustified) other).totalWidth) &&
+                (this.contents.eqv(((RightJustified) other).contents));
     }
-
 }

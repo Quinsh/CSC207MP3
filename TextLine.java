@@ -56,7 +56,8 @@ public class TextLine implements TextBlock {
   } // width()
 
   public boolean eqv(TextBlock other) {
-    return (other instanceof TextLine);
+    return (this instanceof TextLine) &&
+            (other instanceof TextLine);
   }
 
 } // class TextLine

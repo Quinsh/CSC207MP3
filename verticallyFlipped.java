@@ -21,6 +21,7 @@ public class verticallyFlipped implements TextBlock{
     };
 
     public boolean eqv(TextBlock other) {
-        return (other instanceof verticallyFlipped);
+        return (other instanceof verticallyFlipped) &&
+                (this.contents.eqv(((verticallyFlipped) other).contents));
     }
 }

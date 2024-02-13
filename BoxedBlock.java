@@ -65,7 +65,8 @@ public class BoxedBlock implements TextBlock {
   } // width()
 
   public boolean eqv(TextBlock other) {
-    return (other instanceof BoxedBlock);
+    return (other instanceof BoxedBlock) && 
+            (this.contents.eqv(((BoxedBlock) other).contents));
   }
 
 } // class BoxedBlock
