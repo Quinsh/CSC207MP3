@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
 
-public class BoxedBlockTest implements TextBlock{
+public class Test2 implements TextBlock{
   /**
    * A test that should succeed.
    * @throws Exception 
