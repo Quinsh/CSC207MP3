@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
 
-public class Test2 implements TextBlock{
+public class Test2{
   /**
    * A test that should succeed.
    * @throws Exception 
@@ -59,28 +59,6 @@ public class Test2 implements TextBlock{
     assertEquals(true, TBUtils.eqv(new BoxedBlock(new TextLine("hello")), new BoxedBlock(new TextLine("hello"))));
     assertEquals(false, TBUtils.eqv((new horizontallyFlipped(new horizontallyFlipped (new BoxedBlock(new TextLine("hello"))))),new BoxedBlock(new TextLine("hello")) ));
   } 
-  @Override
-  public String row(int i) throws Exception {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'row'");
-  }
-
-  @Override
-  public int height() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'height'");
-  }
-
-  @Override
-  public int width() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'width'");
-  }
-
-  @Override
-  public boolean eqv(TextBlock other) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'eqv'");
-  }
+  
 
 } // class TestSampleMethods
